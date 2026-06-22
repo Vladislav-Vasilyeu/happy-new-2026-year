@@ -87,6 +87,9 @@ function App() {
           <button className={activeTab === 'wish' ? 'active' : ''} onClick={() => setActiveTab('wish')}>
             Загадать желание
           </button>
+          <button className="share-btn" onClick={() => navigator.share({ title: 'До НГ!', text: 'Смотри, сколько до Нового года!', url: window.location.href })}>
+            Поделиться 🎉
+          </button>
         </div>
 
         {/* КНОПКА МУЗЫКИ */}
